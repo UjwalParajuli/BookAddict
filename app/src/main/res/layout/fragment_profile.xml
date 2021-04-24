@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/primary_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:background="@drawable/wave">
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/userimage"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_below="@+id/userimage"
+            android:id="@+id/text_view_full_name_profile"
+            android:fontFamily="@font/libre_caslon_text_regular"
+            android:textStyle="bold"
+            android:textColor="@color/headings"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llayoutt"
+            android:orientation="horizontal"
+            android:layout_below="@id/text_view_full_name_profile"
+            android:layout_marginTop="155dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_baseline_monetization_on_24"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:id="@+id/text_view_my_donations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Donations"
+                android:textSize="16dp"
+                android:fontFamily="@font/libre_caslon_text_regular"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/headings"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llayout"
+            android:orientation="horizontal"
+            android:layout_below="@id/llayoutt"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:id="@+id/text_view_edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textSize="16dp"
+                android:fontFamily="@font/libre_caslon_text_regular"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/headings"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llayout1"
+            android:orientation="horizontal"
+            android:layout_below="@id/llayout"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:id="@+id/text_view_change_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textSize="16dp"
+                android:fontFamily="@font/libre_caslon_text_regular"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/headings"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llayout2"
+            android:orientation="horizontal"
+            android:layout_below="@id/llayout1"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_baseline_info_24"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:id="@+id/text_view_about_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:fontFamily="@font/libre_caslon_text_regular"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#342E37"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_rounded"
+            android:textColor="@color/white"
+            android:layout_marginTop="70dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/libre_caslon_text_regular"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:layout_below="@id/llayout2"/>
+
+    </RelativeLayout>
+
+</ScrollView>

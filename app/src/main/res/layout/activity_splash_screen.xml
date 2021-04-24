@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/primary_white"
+    tools:context=".SplashScreenActivity">
+
+
+    <ImageView
+        android:id="@+id/image_view_splash_screen"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/book" />
+
+    <TextView
+        android:id="@+id/text_view_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/libre_caslon_text_bold"
+        android:text="Book Addict"
+        android:textColor="@color/title_color"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_splash_screen"
+        app:layout_constraintStart_toStartOf="@+id/image_view_splash_screen"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_splash_screen" />
+
+    <TextView
+        android:id="@+id/text_view_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="'Today a reader, tomorrow a leader.'"
+        android:textSize="16dp"
+        android:fontFamily="@font/libre_caslon_text_italic"
+        android:textColor="@color/primary_orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
