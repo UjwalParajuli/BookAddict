@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="230dp">
+
+    <LinearLayout
+        android:id="@+id/cars_item_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_card_view_border">
+
+                    <ImageView
+                        android:id="@+id/image_view_book"
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/munamadan" />
+
+                    <TextView
+                        android:id="@+id/text_view_book_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:fontFamily="@font/libre_caslon_text_regular"
+                        android:maxLines="1"
+                        android:text="Book Name"
+                        android:textColor="@color/primary_black"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/image_view_book"
+                        app:layout_constraintTop_toBottomOf="@+id/image_view_book" />
+
+                    <TextView
+                        android:id="@+id/text_view_book_author"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:fontFamily="@font/libre_caslon_text_regular"
+                        android:text="by Laxmi Prasad Devkota"
+                        android:textColor="@color/primary_black"
+                        android:lineHeight="18dp"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="@+id/image_view_book"
+                        app:layout_constraintStart_toStartOf="@id/image_view_book"
+                        app:layout_constraintTop_toBottomOf="@+id/text_view_book_name" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

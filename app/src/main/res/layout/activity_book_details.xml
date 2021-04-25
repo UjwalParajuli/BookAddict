@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".BookDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/button_download"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Download"
+        android:textAllCaps="false"
+        android:textSize="14dp"
+        android:fontFamily="@font/libre_caslon_text_regular"
+        app:layout_constraintEnd_toStartOf="@+id/button_read"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_book_details" />
+
+    <Button
+        android:id="@+id/button_read"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Read"
+        android:textAllCaps="false"
+        android:textSize="14dp"
+        android:fontFamily="@font/libre_caslon_text_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/button_download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_download"
+        app:layout_constraintTop_toTopOf="@+id/button_download" />
+
+    <ImageView
+        android:id="@+id/image_view_book_details"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jiwankada" />
+
+    <RatingBar
+        android:id="@+id/average_rating_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:stepSize="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_view_author_name_book_details"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_author_name_book_details" />
+
+    <TextView
+        android:id="@+id/text_view_genre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Genre: Motivation"
+        android:textColor="@color/small_text"
+        android:textSize="14dp"
+        android:fontFamily="@font/libre_caslon_text_regular"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_author_name_book_details"
+        app:layout_constraintStart_toStartOf="@+id/average_rating_bar"
+        app:layout_constraintTop_toBottomOf="@+id/average_rating_bar" />
+
+    <TextView
+        android:id="@+id/text_view_total_pages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pages: 50"
+        android:textColor="@color/small_text"
+        android:textSize="14dp"
+        android:fontFamily="@font/libre_caslon_text_regular"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_genre"
+        app:layout_constraintStart_toStartOf="@+id/text_view_genre"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_genre" />
+
+    <TextView
+        android:id="@+id/text_view_published_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Published On: 2021/02/02"
+        android:fontFamily="@font/libre_caslon_text_regular"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_total_pages"
+        app:layout_constraintStart_toStartOf="@+id/text_view_total_pages"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_total_pages" />
+
+    <TextView
+        android:id="@+id/text_view_author_name_book_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="by Jhamak Kumari Ghimire"
+        android:textColor="@color/small_text"
+        android:textStyle="bold"
+        android:fontFamily="@font/libre_caslon_text_regular"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_book_title_book_details"
+        app:layout_constraintStart_toStartOf="@+id/text_view_book_title_book_details"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_book_title_book_details" />
+
+    <TextView
+        android:id="@+id/text_view_book_title_book_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/libre_caslon_text_bold"
+        android:lineHeight="30dp"
+        android:text="Book Title"
+        android:textColor="@color/primary_black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view_book_details"
+        app:layout_constraintTop_toTopOf="@+id/image_view_book_details" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/small_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_download" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Reviews"
+        android:fontFamily="@font/libre_caslon_text_bold"
+        android:textColor="@color/primary_black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/divider1"
+        app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_reviews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_rate_review_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

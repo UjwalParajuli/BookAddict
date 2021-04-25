@@ -8,5 +8,6 @@
     <color name="primary_white">#fafffd</color>
     <color name="primary_orange">#fa824c</color>
     <color name="headings">#373737</color>
+    <color name="small_text">#8F8F8F</color>
 
 </resources>

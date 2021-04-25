@@ -1,5 +1,11 @@
 <resources>
+    <item name="item_click_support" type="id" />
     <string name="app_name">Book Addict</string>
     <string name="login">Already have an account?<font color='#5DA8F3'> Login</font></string>
     <string name="signup">Not Signed Up Yet?<font color='#5DA8F3'> Sign Up</font></string>
+    <string name="about">Book Addict is an app for all the book lovers out there who wants to spend their free time by reading their favourite books. Books are a uniquely portable magic. In this app, you can search your favourite book. You can either download the book or can read it in the app. Enjoy your time. Keep supporting us. Thank you for using the app.</string>
+    <string name="facebook"><a href="https://www.facebook.com/bookaddict">Book Addict</a></string>
+    <string name="instagram"><a href="https://www.instagram.com/bookaddict/">@bookaddict</a></string>
+    <string name="twitter"><a href="https://twitter.com/bookaddict">@bookaddict</a></string>
+
 </resources>

@@ -13,13 +13,20 @@
         android:theme="@style/Theme.BookAddict"
         android:usesCleartextTraffic="true"
         tools:replace="android:theme">
-        <activity android:name=".LoginActivity"
-            android:windowSoftInputMode="adjustPan"
-            android:theme="@style/NoActionBarTheme"/>
+        <activity android:name=".ReviewsActivity"></activity>
+        <activity android:name=".BookDetailsActivity" />
+        <activity android:name=".MyDonationsActivity" />
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".SignUpActivity"
-            android:windowSoftInputMode="adjustPan"
-            android:theme="@style/NoActionBarTheme" />
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/NoActionBarTheme">
@@ -29,12 +36,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:launchMode="singleTop"
-            android:windowSoftInputMode="adjustPan"/>
+            android:windowSoftInputMode="adjustPan" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
 </manifest>

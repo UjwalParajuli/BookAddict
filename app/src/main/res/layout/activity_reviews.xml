@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ReviewsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Give your rating for the book"
+            android:textSize="16dp"
+            android:textColor="@color/small_text"
+            android:fontFamily="@font/libre_caslon_text_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:stepSize="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Please leave your feedback below"
+            android:textSize="16dp"
+            android:textColor="@color/small_text"
+            android:fontFamily="@font/libre_caslon_text_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/rating_bar_review"
+            app:layout_constraintTop_toBottomOf="@+id/rating_bar_review" />
+
+        <EditText
+            android:id="@+id/edit_text_feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:gravity="top"
+            android:textColor="@color/primary_black"
+            android:textSize="14sp"
+            app:fontFamily="@font/libre_caslon_text_regular"
+            android:hint="Your Feedback"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/button_send_feedback"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/libre_caslon_text_regular"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_rounded"
+            android:layout_marginTop="8dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="@+id/edit_text_feedback"
+            app:layout_constraintStart_toStartOf="@+id/edit_text_feedback"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_feedback" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
