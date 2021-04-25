@@ -16,7 +16,6 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:background="@color/primary_white"
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -31,6 +30,7 @@
                 android:text="You have donated Rs. 500 on 2021/04/25"
                 android:textColor="@color/primary_black"
                 android:textSize="14sp"
+                android:lineHeight="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

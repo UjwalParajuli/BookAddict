@@ -98,6 +98,8 @@
         android:layout_marginTop="8dp"
         android:text="Published On: 2021/02/02"
         android:fontFamily="@font/libre_caslon_text_regular"
+        android:textColor="@color/small_text"
+        android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="@+id/text_view_total_pages"
         app:layout_constraintStart_toStartOf="@+id/text_view_total_pages"
         app:layout_constraintTop_toBottomOf="@+id/text_view_total_pages" />
@@ -176,6 +178,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_baseline_rate_review_24" />
+
+        <TextView
+            android:id="@+id/text_view_no_reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="There are not any reviews yet for this book."
+            android:textSize="14dp"
+            android:textColor="@color/title_color"
+            android:fontFamily="@font/libre_caslon_text_regular"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

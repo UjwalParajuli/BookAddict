@@ -96,7 +96,7 @@ public class BooksFragment extends Fragment {
 
                         // Grid item spacing
                         int spanCount = 2; // 3 columns
-                        int spacing = 50; // 50px
+                        int spacing = 150; // 50px
                         boolean includeEdge = false;
                         recycler_view_books.addItemDecoration(new GridSpacingItemDecoration(spanCount, spacing, includeEdge));
                         recycler_view_books.setAdapter(bookAdapter);
