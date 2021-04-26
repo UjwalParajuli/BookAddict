@@ -13,7 +13,8 @@
         android:theme="@style/Theme.BookAddict"
         android:usesCleartextTraffic="true"
         tools:replace="android:theme">
-        <activity android:name=".PdfViewActivity"></activity>
+        <activity android:name=".ForgotPasswordActivity"></activity>
+        <activity android:name=".PdfViewActivity" />
         <activity android:name=".ReviewsActivity" />
         <activity android:name=".BookDetailsActivity" />
         <activity android:name=".MyDonationsActivity" />
@@ -42,11 +43,11 @@
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustPan" />
     </application>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
-
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

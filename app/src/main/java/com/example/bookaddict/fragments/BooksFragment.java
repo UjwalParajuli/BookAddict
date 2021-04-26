@@ -19,8 +19,8 @@ import com.example.bookaddict.R;
 import com.example.bookaddict.adapters.BookAdapter;
 import com.example.bookaddict.models.BookModel;
 import com.example.bookaddict.utils.ErrorUtils;
-import com.example.bookaddict.utils.GridSpacingItemDecoration;
 import com.example.bookaddict.utils.ItemClickSupport;
+import com.example.bookaddict.utils.ItemOffsetDecoration;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,7 +32,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class BooksFragment extends Fragment {
@@ -94,11 +93,8 @@ public class BooksFragment extends Fragment {
                         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
                         recycler_view_books.setLayoutManager(gridLayoutManager);
 
-                        // Grid item spacing
-                        int spanCount = 2; // 3 columns
-                        int spacing = 150; // 50px
-                        boolean includeEdge = false;
-                        recycler_view_books.addItemDecoration(new GridSpacingItemDecoration(spanCount, spacing, includeEdge));
+                        ItemOffsetDecoration itemDecoration = new ItemOffsetDecoration(getContext(), R.dimen.item_offset);
+                        recycler_view_books.addItemDecoration(itemDecoration);
                         recycler_view_books.setAdapter(bookAdapter);
                         bookAdapter.notifyDataSetChanged();
 
